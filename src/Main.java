@@ -3,17 +3,17 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.io.File;
 
 public class Main {
     public static void main(String[] args) {
-        // Путь к входному файлу
-        final String inputFilePath = "D:\\User\\Документы\\input.csv";
-        // Путь к файлу для записи результатов
-        final String outputFilePath = "D:\\User\\Документы\\result.txt";
+        // Путь к входному файлу (относительный путь)
+        String inputFilePath = System.getProperty("user.dir") + File.separator + "input.csv";
+        //final String inputFilePath = "input.csv";
+        // Путь к файлу для записи результатов (относительный путь)
+        final String outputFilePath = "result.txt";
         try {
             // Чтение входного файла и обработка данных
             BufferedReader reader = new BufferedReader(new FileReader(inputFilePath));
