@@ -10,6 +10,7 @@ import java.io.File;
 public class Main {
     public static void main(String[] args) {
         // Путь к входному файлу (относительный путь)
+
         String inputFilePath = System.getProperty("user.dir") + File.separator + "input.csv";
         //final String inputFilePath = "input.csv";
         // Путь к файлу для записи результатов (относительный путь)
